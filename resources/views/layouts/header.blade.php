@@ -189,7 +189,7 @@
                        onclick="event.preventDefault(); document.getElementById('logout-form-header').submit();">
                         Logout
                     </a>
-                    <form id="logout-form-header" action="{{ route('keluar') }}" method="POST" class="hidden">
+                    <form id="logout-form-header" action="{{ route('logout.post') }}" method="POST" class="hidden">
                         @csrf
                     </form>
                 </div>

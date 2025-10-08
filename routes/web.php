@@ -15,7 +15,7 @@ use Carbon\Carbon;
 Route::get('login', [AuthController::class, 'login'])->name('login');
 Route::post('login', [AuthController::class, 'postlogin'])->name('postlogin');
 Route::get('keluar', [AuthController::class, 'logout'])->middleware('auth')->name('keluar');
-Route::post('keluar', [AuthController::class, 'logout'])->middleware('auth')->name('keluar');
+Route::post('keluar', [AuthController::class, 'logout'])->middleware('auth')->name('logout.post');
 
 
 
